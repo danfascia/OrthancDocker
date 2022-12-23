@@ -8,7 +8,7 @@ RUN bash ./download-plugins.sh
 
 RUN rm ./download-plugins.sh
 
-
+VOLUME [ "/var/lib/orthanc/db" ]
 EXPOSE 4242
 EXPOSE 8042
 
